@@ -5,6 +5,7 @@ import javax.swing.*;
 public class Main {
     public static void main(String[] args) {
         boolean salida = false;
+        Libreria.crearLibreria();
 
         while(salida==false)
         {
@@ -16,7 +17,7 @@ public class Main {
 
             switch (opcion) {
                 case 1:
-                    //
+                    Libreria.buscarLibro();
                     break;
                 case 2:
                     Libreria.agregar();
@@ -31,7 +32,7 @@ public class Main {
             }
         }
         if(salida==true){
-            JOptionPane.showMessageDialog(null,"adios");
+            JOptionPane.showMessageDialog(null,"Adios, Vuelva pronto!");
         }
 
         
